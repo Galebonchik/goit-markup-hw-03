@@ -28,6 +28,10 @@ body {
     margin: 0 auto;
     /* outline: 2px solid tomato; */
    }
+   h1, h2, h3, h4, p{
+    margin-top: 0;
+    margin-bottom:0;
+}
 .logo{
     font-family: Raleway, sans-serif;
     letter-spacing: 0.03em;
@@ -45,10 +49,7 @@ body {
     padding: 0;
     margin: 0;
 }
-/* h1, h2, h3,h4, p,{
-    margin-top: 0;
-    margin-bottom:0;
-} */
+
 
 /* site-nav */
 .main-nav{
@@ -56,6 +57,9 @@ body {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+.container .main-nav{
+    padding:0;
 }
 .site-nav{
     display: flex;
@@ -140,7 +144,7 @@ body {
     }
 .section{
     padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
 .section-title {
     color:var(--title-text-color);
@@ -156,21 +160,26 @@ body {
         }
     .title-list:not(:last-child){
         margin-right: 24px;
-        max-width: 264px;
+       
     }
    
 .principles-list .title {
     color: var(--title-text-color);
-    margin-top: 120px;
-}
+    }
 .text{
     margin-top: 0;
     margin-bottom: 0;
+     max-width: 264px;
 }
 .doing-list{
     display: flex;
     flex-wrap: wrap;
     gap:24px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .nav-button{
     display: flex;
@@ -202,6 +211,9 @@ body {
 
         /* text-align: center; */
 }
+.projects-list .names{
+    margin-top: 0;
+}
 .profession{
     margin-top: 0;
     margin-bottom: 32px;
@@ -215,11 +227,7 @@ body {
     border: 1px solid var(--secondary-bg-color);
     border-top: none;
 }
-.img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 .employees-photo{
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -242,8 +250,7 @@ border-radius: 0px 0px 4px 4px;
     border: 1px solid #E7E9FC;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
-padding-top: 12px;
-padding-bottom: 12px;
+padding: 8px 16px;
 }
  .button-list:hover,
  .button-list:focus {
@@ -254,9 +261,8 @@ padding-bottom: 12px;
     letter-spacing: 0.04em;
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 12px;
-padding-bottom: 12px;
-  }
+    padding: 8px 16px;
+     }
 .characteristic{
     color: var(--ending-accent-color);
     max-width: 264px;
